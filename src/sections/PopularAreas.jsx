@@ -16,8 +16,9 @@ const PopularAreas = () => {
     });
   }, []);
 
-  const { darkMode } = useDarkMode();
+  const { darkMode, toggleDarkMode} = useDarkMode();
   console.log("darkMode", darkMode);
+  console.log("toggleDarkMode", toggleDarkMode);
 
   return (
     <div className={`${darkMode ? 'dark bg-black' : 'light bg-transparent'}`}>
@@ -33,7 +34,20 @@ const PopularAreas = () => {
             <div data-aos='zoom-in' data-aos-delay='400'  style={{ backgroundImage: `url(${area3})` }}className='h-[400px] bg-cover bg-center rounded-xl'></div>
           </div>
         </div>
-        <div></div>
+        <div id='bottom ' className='w-full grid lg:grid-cols-3 grid-cols-1 lg:justify-center justify-start items-center gap-6 sm:grid-cols-3' >
+          <div data-aos='slide-up' data-aos-delay='200' className='flex justify-center lg:items-center gap-8 w-full sm:items-center'>
+           <h1 className='text-black text-7xl font-semibold dark:text-white'>5k</h1> 
+           <h1>ACTIVE <br /> LISTINGS</h1> </div>
+        <div data-aos='slide-up' data-aos-delay='200' className='flex justify-center lg:items-center gap-8 w-full sm:items-center'>
+           <h1 className='text-black text-7xl font-semibold dark:text-white'>5k</h1> 
+           <h1>ACTIVE <br /> LISTINGS</h1> 
+          </div>
+          <div data-aos='slide-up' data-aos-delay='200' className='flex justify-center lg:items-center gap-8 w-full sm:items-center'>
+           <h1 className='text-black text-7xl font-semibold dark:text-white'>5k</h1> 
+           <h1>ACTIVE <br /> LISTINGS</h1> 
+          </div>
+          </div>
+        
       </section>
     </div>
   );

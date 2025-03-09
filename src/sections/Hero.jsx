@@ -14,9 +14,9 @@ const Hero = () => {
     });
   }, []);
 
-  const { darkMode } = useDarkMode();
+  const { darkMode, toggleDarkMode } = useDarkMode();
   console.log("darkMode", darkMode);
-
+  console.log("toggleDarkMode", toggleDarkMode);
   return (
     <>
       <div className={`${darkMode ? "dark bg-black" : "light bg-white"}`}>
@@ -96,6 +96,7 @@ const Hero = () => {
           </div>
           <div className="w-full">
             <button className="bg-red-600 dar:bg-red-700 hover:bg-black dark:hover:bg-white dark:hover:text-black text-lg p-4 w-full text-white font-semibold rounded-xl cursor-pointer transform hover:scale-110 transition-transform duration-300">SUBMIT</button>
+           
           </div>
         </div>
       </div>
