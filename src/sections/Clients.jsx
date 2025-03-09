@@ -22,7 +22,7 @@ console.log("toggleDarkMode", toggleDarkMode);
 
 <div className='flex fex-col justify-cebter items-start gap04'>
 <h1 className='text-red-500 dark:text-white'>OUR CLIENTS</h1>
-<h1 datclassName='text-black dark:text-white text-[40px] fot-semibold' leading-10>What our clients <br />saying about us</h1>
+<h1 className='text-black dark:text-white text-[40px] fot-semibold' leading-10>What our clients <br />saying about us</h1>
 </div>
 <div id='clients-box' className='grid lg:grid-cols-3 grid-xcols-1 justify-center items-center gp-8 w-full'>
 
