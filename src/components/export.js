@@ -90,7 +90,7 @@ export const property = [
     },
 ];
 
-export const services = [
+export const service = [
     {
         icon: MdNoteAlt,
         title: 'Sell your home',
