@@ -29,16 +29,16 @@ const Footer = () => {
           <p className='text-slate-200 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, et. Lorem ipsum dolor sit amet.</p>
           <div id='social-icons' className="flex justify-start items-center gap-4 mt-4">
             <div className='p-3 rounded-xl bg-white hover:bg-red-600 hover:text-white cursor-pointer transform hover:scale-110 transition-transform duration-300'>
-              <FaFacebookF className='size-5' />
+              <FaFacebookF className='text-xl' />
             </div>
             <div className='p-3 rounded-xl bg-white hover:bg-red-600 hover:text-white cursor-pointer transform hover:scale-110 transition-transform duration-300'>
-              <FaInstagram className='size-5' />
+              <FaInstagram className='text-xl' />
             </div>
             <div className='p-3 rounded-xl bg-white hover:bg-red-600 hover:text-white cursor-pointer transform hover:scale-110 transition-transform duration-300'>
-              <FaTwitter className='size-5' />
+              <FaTwitter className='text-xl' />
             </div>
             <div className='p-3 rounded-xl bg-white hover:bg-red-600 hover:text-white cursor-pointer transform hover:scale-110 transition-transform duration-300'>
-              <FaYoutube className='size-5' />
+              <FaYoutube className='text-xl' />
             </div>
           </div>
           <h1 className='text-white mt-8'>Copyright Real Estate, All Rights Reserved</h1>
@@ -46,45 +46,44 @@ const Footer = () => {
         <div className='flex flex-col justify-center items-start gap-5'>
           <h1 className='text-white text-2xl font-semibold'>Contact Us</h1>
           <div className='flex justify-center items-center gap-3'>
-            <FaBuilding className='text-white size-15 ml-2' />
+            <FaBuilding className='text-white text-xl ml-2' />
             <p className='text-slate-200'>Lorem, ipsum adipisicing elit. Voluptas exercitationem, tempore quidem voluptate?</p>
           </div>
           <div className='flex justify-center items-center gap-3'>
-            <FaMobile className='text-white size-10 ml-1' />
+            <FaMobile className='text-white text-xl ml-1' />
             <p className='text-slate-200'>+984 2902 0290</p>
           </div>
           <div className='flex justify-center items-center gap-3'>
-            <FaFax className='text-white size-10 ml-1' />
+            <FaFax className='text-white text-xl ml-1' />
             <p className='text-slate-200'>9494 45949</p>
           </div>
           <div className='flex justify-center items-center gap-3'>
-            <IoMdMail className='text-white size-10 ml-1' />
+            <IoMdMail className='text-white text-xl ml-1' />
             <p className='text-slate-200'>domain@gmail.com</p>
           </div>
         </div>
         <div className='flex flex-col justify-center items-start gap-5'>
           <h1 className='text-white text-2xl font-semibold'>Latest Properties</h1>
           <div className='flex justify-center items-center gap-4'>
-            <img src={prop5} alt="" className='w-[120px] rounded-lg transform hover:scale-110 cursor-pointer transition-trnsform duration-300'/>
+            <img src={prop5} alt="Property 1" className='w-[120px] rounded-lg transform hover:scale-110 cursor-pointer transition-transform duration-300' />
             <div>
-              <h1 className='text-lg text-white '>villa with amazing view</h1>
-              <p className='txet-slate-400'>$ 287.98</p>
-
+              <h1 className='text-lg text-white'>Villa with amazing view</h1>
+              <p className='text-slate-400'>$ 287.98</p>
             </div>
-        </div>
-        <div className='flex justify-center items-center gap-4'>
-            <img src={prop6} alt="" className='w-[120px] rounded-lg transform hover:scale-110 cursor-pointer transition-trnsform duration-300'/>
+          </div>
+          <div className='flex justify-center items-center gap-4'>
+            <img src={prop6} alt="Property 2" className='w-[120px] rounded-lg transform hover:scale-110 cursor-pointer transition-transform duration-300' />
             <div>
-              <h1 className='text-lg text-white '>Smart view from beach</h1>
-              <p className='txet-slate-400'>$ 487.98</p>
-
+              <h1 className='text-lg text-white'>Smart view from beach</h1>
+              <p className='text-slate-400'>$ 487.98</p>
             </div>
+          </div>
         </div>
-        </div>
-
       </footer>
-      <div id='icon-box' className='bg-red-600 p-4 rounded-full hover:bg-black cursor-pointer fixed lg:bottom-12 bottom-6 right-6' >
-        <Link to='hero' spy={true} smooth={true} offset={100}> <FaArrowUp className='text-white size-10' /></Link>
+      <div id='icon-box' className='bg-red-600 p-4 rounded-full hover:bg-black cursor-pointer fixed lg:bottom-12 bottom-6 right-6'>
+        <Link to='hero' spy={true} smooth={true} offset={-100}>
+          <FaArrowUp className='text-white text-xl' />
+        </Link>
       </div>
       <div>
         <button onClick={toggleDarkMode} className='flex items-center p-4 rounded-full bg-orange-500 fixed lg:top-52 right-6 top-6'>
