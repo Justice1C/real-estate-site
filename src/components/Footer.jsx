@@ -81,7 +81,7 @@ const Footer = () => {
         </div>
       </footer>
       <div id='icon-box' className='bg-red-600 p-4 rounded-full hover:bg-black cursor-pointer fixed lg:bottom-12 bottom-6 right-6'>
-        <Link to='hero' spy={true} smooth={true} offset={-100}>
+        <Link to='home' spy={true} smooth={true} offset={-100}>
           <FaArrowUp className='text-white text-xl' />
         </Link>
       </div>
